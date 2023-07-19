@@ -1,0 +1,28 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: black;
+    overflow: hidden;
+}
+
+.container {
+    background: url("../img/map/NnVUMkA.png");
+    height: 3587px;
+    z-index: 0;
+    background-size: contain;
+    position: relative;
+    background-repeat: no-repeat;
+
+}
+
+.container .player {
+    background: url("../img/player/among_us_player_red_icon_156942.png");
+    height: 50px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 10px;
+}
