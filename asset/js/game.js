@@ -1,11 +1,12 @@
 var player = document.getElementById("player");
+var playername = document.getElementById("player-name");
 var map = document.getElementById("container");
 var posx, posy;
 
 player.style.top = "500px";
 player.style.left = "1300px";
 
-const step = 25;
+const step = 5;
 
 const activeKeys = {};
 
@@ -31,9 +32,13 @@ function updatePlayerPosition() {
   }
   if (activeKeys["q"]) {
     posx -= step;
+    player.style.transform = "rotateY(180deg)";
+    playername.style.transform = "rotateY(360deg)";
   }
   if (activeKeys["d"]) {
     posx += step;
+    player.style.transform = "rotateY(0deg)";
+    playername.style.transform = "rotateY(360deg)";
   }
 
   // Update the player's position
